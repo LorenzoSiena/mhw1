@@ -1,0 +1,397 @@
+:root {
+  /*Retro Palette*/
+  --Red_N: #dd2020;
+  --Black_N: #0d0c0c;
+  --Gray_N: #a5a2a2;
+  --LightGray_N: #e5e5e5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', serif;
+  background-color: var(--LightGray_N);
+  color: var(--Black_N);
+
+}
+
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header {
+  background-image: url(https://get.wallhere.com/photo/pixel-art-8-bit-1442071.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+h1 {
+
+  z-index: 1;
+}
+
+#title {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  font-size: 2em;
+
+}
+
+#sub_title {
+
+  font-size: 0.5em;
+  padding: 5px 120px;
+}
+
+
+
+
+#links {
+
+  display: flex;
+  align-items: flex-end;
+  top: 12px;
+
+}
+
+a {
+  background-color: white;
+  color: var(--Red_N);
+  padding: 5px 12px;
+  margin: 4px;
+  border-radius: 6px;
+  font-size: 2em;
+  text-decoration: none;
+  z-index: 1;
+}
+
+section {
+
+  height: 100vh;
+  background-color: var(--LightGray_N);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+
+
+}
+
+/*-----------------SOPRA-------------------------------------*/
+
+#middletop {
+  
+  border-radius: 8px;
+  margin: 10px;
+  background-color: var(--Gray_N);
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+#presentation {
+  border-radius: 8px;
+  background-color: var(--LightGray_N);
+  margin: 30px;
+  width: 70%;
+  flex-grow: 1;
+  padding: 30px;
+  font-size: 1em;
+  text-align: center;
+
+
+}
+div #presentation {
+  line-height: 1.6;
+
+}
+#ourphoto {
+  background-image: url(https://www.technootech.com/wp-content/uploads/2019/12/Team-Management-Software-Development.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  display: block;
+  margin: 20px;
+  min-width: 50%;
+  /*LARHEZZA MINIMA*/
+  min-height: 50%;
+  border-radius: 15px;
+  flex-grow: 1;
+
+}
+
+
+
+
+/*-----------------SOTTO-------------------------------------*/
+
+
+#middlebottom {
+  border-radius: 8px;
+  margin: 10px;
+  flex-grow: 1;
+  background-color: var(--Gray_N);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.sub {
+  display: flex;
+  border-radius: 8px;
+  flex-grow: 1;
+  background-color: var(--LightGray_N);
+  margin: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height 400px;
+  /* TEMPORANEO */
+}
+
+#A1,
+#A2,
+#A3 {
+  /*ARTICOLI DESCRITTIVI CONSOLE*/
+  display: block;
+  width: 50%;
+  padding: 50px 15px;
+
+
+}
+
+.btn {
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+  left: -250px;
+  top: 80px;
+  padding: 10px 15px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: yellow;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--Red_N);
+
+}
+
+#F1 {
+
+  display: block;
+
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/82/NES-Console-Set.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  margin-right: 50px;
+  border-radius: 30px;
+  background-size: 100%;
+  width: 700px;
+  height: 500px;
+
+
+}
+
+#F2 {
+
+  display: block;
+
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b9/Atari-2600-Wood-4Sw-Set.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  margin-right: 50px;
+  border-radius: 30px;
+  background-size: 100%;
+
+  width: 700px;
+  height: 500px;
+}
+
+#F3 {
+
+  display: block;
+
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 50px;
+  border-radius: 30px;
+  background-size: 100%;
+  width: 700px;
+  height: 500px;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  background-color: var(--Gray_N);
+  color: rgba(255, 255, 255, .8);
+  padding: 10px;
+  text-align: center;
+
+}
+
+
+/*SCOMPAIONO I LINK*/
+@media (max-width: 750px) {
+  header {
+    height: 300px;
+  }
+
+  #links {
+    display: none;
+  }
+}
+
+/*IL TITOLO SI ADATTA*/
+@media (max-width: 750px) {
+  #sub_title {
+    font-size: 0.25em;
+    /*rimpicciolisco*/
+    padding-left: 18px;
+    /*e tolgo bordo sx*/
+  }
+
+  #title {
+    font-size: 0.5em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+
+  /*IL FOOTER SI STRINGE*/
+  footer {
+    font-size: 1em;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+  }
+
+  footer p {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    bottom: 0px;
+
+  }
+
+}
+
+/*I CONTENUNTI SI INCASTRANO BENE*/
+@media (max-width: 750px) {
+  #middletop {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .sub {
+    /*OK*/
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #F1,
+  #F2,
+  #F3 {
+    /*IMMAGINI OK*/
+
+    background-size: 65%;
+    background-position: bottom 35%;
+
+    margin-right: 0px;
+    border-radius: 0px;
+
+
+  }
+
+
+  .btn {
+
+    position: relative;
+    left: 0;
+    top: 30px;
+    padding: 10px 15px;
+    border: 5px solid black;
+    border-radius: 10px;
+
+  }
+
+  #ourphoto {
+    /*La nostra foto cambia direzione e forma*/
+
+    padding: 72px;
+
+    min-width: 50%;
+    /*LARHEZZA MINIMA*/
+    min-height: 0%;
+  }
+}
+
+/*TUTTI I FONT CENTRO RIMPICCIOLISCONO*/
+@media (max-width: 750px) {
+  section {
+    font-size: 0.5em;
+  }
+}
+
+/*MENU INVISIBILE*/
+#menu {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+#menu div {
+
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+
+}
+
+/*SI ATTIVA*/
+@media (max-width: 750px) {
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
